@@ -21,3 +21,15 @@ Amazon S3 provides:
 4.Security – Strong access control, encryption, and IAM integration.
 
 5.Cost-Effective – Pay only for what you use, with no upfront cost.
+
+
+
+Ad:
+Versioning:
+S3 provides versioning (you can enable it under bucket permissions). It helps track and restore previous versions of objects.
+
+Access Logging:
+S3 can maintain access logs for security and auditing.
+
+File-level Access Control:
+We can restrict user access to any specific file. This is mostly used for sensitive data.
