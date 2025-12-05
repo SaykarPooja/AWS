@@ -1,1 +1,14 @@
+What is Cloud Watch?
+It is an AWS service which is used to monitor the AWS activity
 
+What is the USE of Cloud Watch?
+By using it we can monitor services ,send notification ,can check real life matrics
+
+
+What are the main Feature of Cloud watch?
+ 1.Real life matrices
+ 2.Alarm
+ 3.Log matrices
+ 4.Cutom metrices
+ 5.Cost optimization(IMP)
+ 5.Scaling
