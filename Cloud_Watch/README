@@ -1,5 +1,8 @@
-What is Cloud Watch?
-It is an AWS service which is used to monitor the AWS activity
+What is CloudWatch?
+
+Amazon CloudWatch is an AWS monitoring and observability service that collects metrics, logs, and events from AWS resources and applications. 
+It helps you understand the health, performance, and status of your infrastructure in real time.
+
 
 What is the USE of Cloud Watch?
 By using it we can monitor services ,send notification ,can check real life matrics
