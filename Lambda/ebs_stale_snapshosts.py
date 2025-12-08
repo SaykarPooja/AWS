@@ -18,7 +18,7 @@ def lambda_handler(event, context):
         volume_id = snapshot.get('VolumeId')
 
         if not volume_id:
-            # Delete the snapshot if it's not attached to any volume
+            # Delete the snapshot if it's not attached to any volume..
             ec2.delete_snapshot(SnapshotId=snapshot_id)
             print(f"Deleted EBS snapshot {snapshot_id} as it was not attached to any volume.")
         else:
