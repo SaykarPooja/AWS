@@ -22,7 +22,7 @@ def lambda_handler(event, context):
             ec2.delete_snapshot(SnapshotId=snapshot_id)
             print(f"Deleted EBS snapshot {snapshot_id} as it was not attached to any volume.")
         else:
-            # Check if the volume still exists
+            # Check if the volume still exists...
             try:
                 volume_response = ec2.describe_volumes(VolumeIds=[volume_id])
                 if not volume_response['Volumes'][0]['Attachments']:
