@@ -12,7 +12,7 @@ def lambda_handler(event, context):
         for instance in reservation['Instances']:
             active_instance_ids.add(instance['InstanceId'])
 
-    # Iterate through each snapshot and delete if it's not attached to any volume or the volume is not attached to a running instance
+    # Iterate through each snapshot and delete if it's not attached to any volume or the volume is not attached to a running instance....
     for snapshot in response['Snapshots']:
         snapshot_id = snapshot['SnapshotId']
         volume_id = snapshot.get('VolumeId')
