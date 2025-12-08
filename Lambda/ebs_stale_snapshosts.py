@@ -4,7 +4,7 @@ def lambda_handler(event, context):
     # Get all EBS snapshots
     response = ec2.describe_snapshots(OwnerIds=['self'])
 
-    # Get all active EC2 instance IDs
+    # Get all active EC2 instance IDs...
     instances_response = ec2.describe_instances(Filters=[{'Name': 'instance-state-name', 'Values': ['running']}])
     active_instance_ids = set()
 
