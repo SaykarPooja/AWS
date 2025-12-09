@@ -1,7 +1,7 @@
 CFT: Cloud Foramtion Template
 
 
-What is CFT?
+What is CFT??
 
 A CFT is a YAML or JSON file that describes all the AWS resources you want to create.
 
