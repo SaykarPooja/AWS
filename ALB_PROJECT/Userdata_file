@@ -12,3 +12,5 @@ echo "<!DOCTYPE html><html><body style='background-color:green'><h1>Welcome to N
 
 3.Create Target group (attach both the created EC2 instance)
 4.Create Application load balancer(attached created Target group)
+
+Once application Load balancer is ACTIVE by using ALB DNS name we can check out load balancing.
