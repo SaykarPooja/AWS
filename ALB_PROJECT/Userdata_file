@@ -1,12 +1,14 @@
-1.Create 2 SG(ALL TCP & HTTP)
+1.Create 2 Security Group(ALL TCP & HTTP)
 2.Create 2 EC2 instance with 2 different user data:
 
+EX:-
 #!/bin/bash
 sudo su
 yum update -y
 yum install -y httpd.x86_64
 systemctl start httpd.service
 systemctl enable httpd.service
-echo "<!DOCTYPE html><html><body style='background-color:green'><h1>Welcome to Naresh IT --> Server1</h1></body></html>" >> /var/www/html/index.html
+echo "<!DOCTYPE html><html><body style='background-color:green'><h1>Welcome to Naresh IT --> Server1</h1></body></html>" >> /var/www/html/index.html            //update for second EC2 instance
 
-3.Create Target group 
+3.Create Target group (attach both the created EC2 instance)
+4.Create Application load balancer(attached created Target group)
