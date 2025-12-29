@@ -3,12 +3,19 @@
 
 EX:-
 #!/bin/bash
-sudo su
-yum update -y
-yum install -y httpd.x86_64
-systemctl start httpd.service
-systemctl enable httpd.service
-echo "<!DOCTYPE html><html><body style='background-color:green'><h1>Hi Pooja Saykar this is --> Server1</h1></body></html>" >> /var/www/html/index.html            //update for second EC2 instance
+apt-get update -y
+apt-get install -y apache2
+systemctl start apache2
+systemctl enable apache2
+
+echo "<!DOCTYPE html>
+<html>
+<body style='background-color:green'>
+<h1>Hi Pooja Saykar this is --> Server1</h1>
+</body>
+</html>" > /var/www/html/index.html          //update for second EC2 instance
+
+
 
 3.Create Target group (attach both the created EC2 instance)
 4.Create Application load balancer(attached created Target group)
